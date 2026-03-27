@@ -1,6 +1,6 @@
 const http = require('http');
 
-const VERSION = "v1";
+const VERSION = "v_test";
 
 http.createServer((req, res) => {
   res.end(`Hello ${VERSION}\n`);
