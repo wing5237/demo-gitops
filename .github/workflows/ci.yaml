@@ -22,15 +22,3 @@ jobs:
           IMAGE_TAG=${{ github.sha }}
           docker build -t wing5237/demo:$IMAGE_TAG .
           docker push wing5237/demo:$IMAGE_TAG
-      - name: Update deployment.yaml
-        run: |
-          IMAGE_TAG=${{ github.sha }}
-          sed -i "s|image: .*|image: wing5237/demo:$IMAGE_TAG|g" guestbook/deployment.yaml
-
-      - name: Push changes
-        run: |
-          git config --global user.name "ci-bot"
-          git config --global user.email "ci@example.com"
-          git add .
-          git commit -m "update image"
-          git push
