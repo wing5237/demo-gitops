@@ -1,0 +1,8 @@
+helm:
+  parameters:
+  - name: image.name
+    value: wing5237/demo
+    forcestring: true
+  - name: image.tag
+    value: 874ee0d80f6052ae7de37a517ee89cab01ca4d4f
+    forcestring: true
