@@ -1,0 +1,5 @@
+image:
+  repository: wing5237/demo
+  tag: "v1"
+
+replicaCount: 1
