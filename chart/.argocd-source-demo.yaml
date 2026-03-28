@@ -4,5 +4,5 @@ helm:
     value: wing5237/demo
     forcestring: true
   - name: image.tag
-    value: 214a283dcae4a206f70521a09ed9460bd0821cea
+    value: c7d69b43ad760b5b3dfd0e900b7b4212b841257a
     forcestring: true
