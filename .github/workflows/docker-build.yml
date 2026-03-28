@@ -22,4 +22,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: wing5237/demo:latest  # 确保这和你 ArgoCD 里监控的一致
+          tags: wing5237/demo:${{ github.sha }}
+          
